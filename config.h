@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "web", "mail", "term", "gfx" };
+static const char *tags[] = { "web", "mail", "term", "gfx", "etc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,6 +35,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 	{ "Inkscape", NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 	{ "Blender",  NULL,	  NULL,	      1 << 3,	    False,	 -1 },
+	{ "Surf",     NULL,	  NULL,	      1,	    False,	 -1 },
 };
 
 /* layout(s) */
@@ -45,7 +46,7 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
-	/* { "><>",      NULL }, */   /* Float layout disabled */
+	{ "><>",      NULL }, 
 	{ "[M]",      monocle },
 };
 
@@ -95,10 +96,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} }, 		/* i3 binding */
 };
 
