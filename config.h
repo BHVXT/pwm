@@ -8,8 +8,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* Tamsyn font */
-static const char *fonts[]          = { "Tamsyn:size=10" };
-static const char dmenufont[]       = "Tamsyn:size=10";
+static const char *fonts[]          = { "tamsyn:size=10" };
+static const char dmenufont[]       = "tamsyn:size=10";
 
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "web", "mail", "term", "gimp", "inkscape", "blender", "write", "misc" };
+static const char *tags[] = { "web", "mail", "term", "gfx" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -33,8 +33,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Chromium", NULL,	  NULL,	      1,	    False,	 -1 },
 	{ "Gimp",     NULL,	  NULL,	      1 << 3,	    False,	 -1 },
-	{ "Inkscape", NULL,	  NULL,	      1 << 4,	    False,	 -1 },
-	{ "Blender",  NULL,	  NULL,	      1 << 5,	    False,	 -1 },
+	{ "Inkscape", NULL,	  NULL,	      1 << 3,	    False,	 -1 },
+	{ "Blender",  NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 };
 
 /* layout(s) */
