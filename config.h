@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	{ "Inkscape", NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 	{ "Blender",  NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 	{ "Surf",     NULL,	  NULL,	      1,	    False,	 -1 },
+	{ "krita",    NULL,	  NULL,	      1 << 3,	    False,	 -1 },
 };
 
 /* layout(s) */
